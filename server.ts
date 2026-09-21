@@ -1021,6 +1021,8 @@ app.post("/api/feedbacks", (req, res) => {
   res.json(newFeedback);
 });
 
+export default app;
+
 async function startServer() {
   await ensureDb();
   if (process.env.NODE_ENV !== "production") {
@@ -1043,5 +1045,7 @@ async function startServer() {
   });
 }
 
-startServer();
+if (process.env.VERCEL !== "1") {
+  startServer();
+}
 
