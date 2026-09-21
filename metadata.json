@@ -1,0 +1,6 @@
+{
+  "name": "RESQ Emergency Sync",
+  "description": "Rapid Emergency Synchronisation & Quick Response point-to-point emergency network.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
