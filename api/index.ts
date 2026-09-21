@@ -1,5 +1,4 @@
-import app from "../server";
-import { ensureDb } from "../server";
+import app, { ensureDb } from "../server.js";
 
 let dbReady = false;
 export default async (req: any, res: any) => {

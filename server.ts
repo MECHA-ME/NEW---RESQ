@@ -5,7 +5,7 @@ import { createServer as createViteServer } from "vite";
 import crypto from "crypto";
 import dotenv from "dotenv";
 dotenv.config();
-import { initPostgres, loadFromPostgres, getPool, isPgEnabled, upsertUser, upsertIncident, upsertFeedback, upsertTraffic, upsertSms, upsertKeypad, persistMeta, clearIncidents, seedIfEmpty } from "./postgres";
+import { initPostgres, loadFromPostgres, getPool, isPgEnabled, upsertUser, upsertIncident, upsertFeedback, upsertTraffic, upsertSms, upsertKeypad, persistMeta, clearIncidents, seedIfEmpty } from "./postgres.js";
 
 const app = express();
 app.use(express.json());
