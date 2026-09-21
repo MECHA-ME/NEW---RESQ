@@ -252,7 +252,7 @@ async function restoreDb() {
   }
 }
 let restoreDone = false;
-async function ensureDb() {
+export async function ensureDb() {
   if (!restoreDone) { await restoreDb(); restoreDone = true; setInterval(() => { persistDb().catch(e=>console.error(e)); }, 5000); }
 }
 
