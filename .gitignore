@@ -8,3 +8,5 @@ coverage/
 !.env.example
 .venv/
 db.json
+
+.vercel
